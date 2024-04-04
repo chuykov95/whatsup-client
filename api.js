@@ -70,7 +70,7 @@ client.on("message", async (msg) => {
 client.on("disconnected", () => {
   console.log("disconnected");
 });
-client.initialize();
+client.initialize().catch((_) => _);
 
 const chatRoute = require("./components/chatting");
 const groupRoute = require("./components/group");
