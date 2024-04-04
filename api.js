@@ -19,7 +19,7 @@ global.client = new Client({
   puppeteer: {
     headless: true,
     ignoreHTTPSErrors: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-extensions"],
+    args: ["--no-sandbox"],
   },
 });
 
