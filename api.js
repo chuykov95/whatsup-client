@@ -20,7 +20,7 @@ global.client = new Client({
     product: "chrome",
     executablePath: "/usr/bin/chromium-browser",
     headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-extensions"],
   },
 });
 
